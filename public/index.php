@@ -58,3 +58,8 @@ $response = $kernel->handle(
 $response->send();
 
 $kernel->terminate($request, $response);
+$app = require_once __DIR__.'/../bootstrap/app.php';
+/*
+ * 设置静态文件目录
+ */
+

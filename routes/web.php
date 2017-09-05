@@ -11,6 +11,19 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+//Route::get('/', function () {
+//	return view('index');
+//});
+Route::get('/other', function () {
+	return view('other');
+})->name('other');
+
+Route::any('/', "\App\Http\Controllers\IndexController@index"); //默认主页
+
+Route::any('/index', "\App\Http\Controllers\IndexController@index")->name('index'); //默认主页
+Route::any('/notes', "\App\Http\Controllers\NotesController@index")->name('notes'); //
+
+
+
+
+
