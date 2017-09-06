@@ -5,22 +5,10 @@
             <div class="section-title">最新文章</div>
             <div class="section-content">
                 <div class="post">
-                    <div class="post-title"><h2><a href="#">文章标题</a></h2></div>
-                    <div class="post-date">Saturday, September 19, 2009 by Viktor Persson</div>
+                    <div class="post-title"><h2><a href="#">{{$data[0]['title']}}</a></h2></div>
+                    <div class="post-date">{{$data[0]['ctime']}} </div>
                     <div class="post-body">
-                        <p><a href="#"><img src="img/sample-image.jpg" alt="" class="bordered"/></a></p>
-                        <p class="large">This is a free website template from <a href="http://cssmoban.com/">cssMoban.com</a>, built using
-                            tableless XHTML and CSS.</p>
-                        <p>This template is distributed under a <a href="http://www.cssmoban.com/license/">Creative Commons Attribution 2.5
-                                License</a>, which allows you to use and modify it for any purpose (personal and commercial), under the condition
-                            that you keep the provided credit links in the footer.</p>
-
-                        <p>The latest template version and CMS conversions for platforms such as WordPress and Blogger can be found at the
-                            official <a href="http://www.cssmoban.com/simple-organization-website-template/">Simple Organization Website
-                                Template</a> page.</p>
-
-                        <p>For more templates, questions and comments please visit <a href="http://www.cssmoban.com/">cssMoban.com Web
-                                Templates</a>.</p>
+                        <p>{{$data[0]['content']}}</p>
 
                         <a href="http://www.cssmoban.com/" class="more">Read more &#187;</a>
 
@@ -31,9 +19,8 @@
                 <div class="col3 left">
                     <div class="column-content">
                         <div class="post">
-                            <h3><a href="#">第一篇</a></h3>
-                            <p>Integer diam elit, condi mentum ac semper ut, tincidunt non diam. Ut congue at commodo aenean euismod tincidunt
-                                lorem euismod.</p>
+                            <h3><a href="#">{{$data[1]['title']}}</a></h3>
+                            <p>{{$data[1]['profile']}}</p>
                             <a href="#" class="more">阅读更多 &#187;</a>
                         </div>
                     </div>
@@ -41,9 +28,8 @@
                 <div class="col3 col3-mid left">
                     <div class="column-content">
                         <div class="post">
-                            <h3><a href="#">第二篇</a></h3>
-                            <p>Sed congue lacinia leo, sed dignissim odio pharetra vel. Fusce a dignissim dui. Fusce semper porttitor enim dapibus
-                                venenatis.</p>
+                            <h3><a href="#">{{$data[2]['title']}}</a></h3>
+                            <p>{{$data[2]['profile']}}</p>
                             <a href="#" class="more">阅读更多 &#187;</a>
                         </div>
                     </div>
@@ -51,8 +37,8 @@
                 <div class="col3 right">
                     <div class="column-content">
                         <div class="post">
-                            <h3><a href="#">第三篇</a></h3>
-                            <p>Sed auctor hendrerit eros eu eleifend. Cras hendrerit iaculis sodales. Pellentesque interdum rhoncus magna.</p>
+                            <h3><a href="#">{{$data[3]['title']}}</a></h3>
+                            <p>{{$data[3]['profile']}}</p>
                             <a href="#" class="more">阅读更多 &#187;</a>
                         </div>
                     </div>
@@ -127,14 +113,20 @@
             <div class="section-title">关键字</div>
             <div class="section-content">
                 <div class="quiet">
-                    <a href="#" style="font-size: 120%">优化</a> <a href="#" style="font-size: 120%">正则</a>                     <a href="#" style="font-size: 120%">git</a> <a href="#" style="font-size: 90%">框架</a> <a href="#"
-                                                                                                                           style="font-size: 80%">composer</a>
-                    <a href="#" style="font-size: 220%">设计模式</a> <a href="#" style="font-size: 100%">Linux</a> <a href="#"
-                                                                                                                             style="font-size: 110%">随笔</a>
-                    <a href="#" style="font-size: 150%">数据结构</a> <a href="#" style="font-size: 140%">架构</a> <a href="#"
-                                                                                                                    style="font-size: 100%">PHP</a>
-                    <a href="#" style="font-size: 90%">算法</a> <a href="#" style="font-size: 120%">安全</a> <a href="#"
-                                                                                                                       style="font-size: 200%">MySQL</a>
+                    <a href="#" style="font-size: 120%">优化</a>
+                    <a href="#" style="font-size: 120%">正则</a>
+                    <a href="#" style="font-size: 120%">git</a>
+                    <a href="#" style="font-size: 90%">框架</a>
+                    <a href="#" style="font-size: 80%">composer</a>
+                    <a href="#" style="font-size: 220%">设计模式</a>
+                    <a href="#" style="font-size: 100%">Linux</a>
+                    <a href="#" style="font-size: 110%">随笔</a>
+                    <a href="#" style="font-size: 150%">数据结构</a>
+                    <a href="#" style="font-size: 140%">架构</a>
+                    <a href="#" style="font-size: 100%">PHP</a>
+                    <a href="#" style="font-size: 90%">算法</a>
+                    <a href="#" style="font-size: 120%">安全</a>
+                    <a href="#" style="font-size: 200%">MySQL</a>
                 </div>
             </div>
 

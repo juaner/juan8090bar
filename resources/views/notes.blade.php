@@ -42,14 +42,13 @@
         <div class="navigation" id="sub-nav">
 
             <ul class="tabbed">
-                <li><a href="index.html">Template Info</a></li>
-                <li><a href="style-demo.html">Style Demo</a></li>
-                <li><a href="comments.html">Comments</a></li>
-                <li class="current-tab"><a href="archives.html">Archives</a></li>
-                <li><a href="no-subnavigation.html">No Subnavigation</a></li>
-                <li><a href="left-sidebar.html">Left Sidebar</a></li>
-                <li><a href="single-column.html">Single Column</a></li>
-                <li><a href="empty-page.html">Empty Page</a></li>
+                <li><a href="index.html">PHP</a></li>
+                <li><a href="style-demo.html">MySQL</a></li>
+                <li><a href="comments.html">Linux</a></li>
+                <li class="current-tab"><a href="archives.html">设计模式</a></li>
+                <li><a href="no-subnavigation.html">数据结构和算法</a></li>
+                <li><a href="left-sidebar.html">安全</a></li>
+                <li><a href="single-column.html">其他</a></li>
             </ul>
 
             <div class="clearer">&nbsp;</div>
@@ -72,6 +71,7 @@
                 <div class="clearer">&nbsp;</div>
 
             </div>
+            @foreach($data as $item)
 
             <div class="post">
 
@@ -81,7 +81,7 @@
                 </div>
 
                 <div class="archive-post-title">
-                    <h3><a href="http://www.cssmoban.com/simple-organization-website-template/">Website Template: Simple Organization</a></h3>
+                    <h3><a href="http://www.cssmoban.com/simple-organization-website-template/">{{$item['title']}}</a></h3>
                     <div class="post-date">15:29, Sunday, September 20, 2009 in <a href="#">Category Name</a></div>
                 </div>
 
@@ -91,151 +91,8 @@
 
             <div class="archive-separator"></div>
 
-            <div class="post">
+            @endforeach
 
-                <div class="archive-post-date">
-                    <div class="archive-post-day">02</div>
-                    <div class="archive-post-month">AUG</div>
-                </div>
-
-                <div class="archive-post-title">
-                    <h3><a href="http://www.cssmoban.com/simple-magazine-website-template/">Website Template: Simple Magazine</a></h3>
-                    <div class="post-date">23:15, Sunday, August 2 2009 in <a href="#">Category Name</a></div>
-                </div>
-
-                <div class="clearer">&nbsp;</div>
-
-            </div>
-
-            <div class="archive-separator"></div>
-
-            <div class="post">
-
-                <div class="archive-post-date">
-                    <div class="archive-post-day">21</div>
-                    <div class="archive-post-month">JUN</div>
-                </div>
-
-                <div class="archive-post-title">
-                    <h3><a href="http://www.cssmoban.com/freshmade-software-website-template/">Website Template: Freshmade Software</a></h3>
-                    <div class="post-date">16:43, Friday, June 21, 2009 in <a href="#">Category Name</a></div>
-                </div>
-
-                <div class="clearer">&nbsp;</div>
-
-            </div>
-
-            <div class="archive-separator"></div>
-
-            <div class="post">
-
-                <div class="archive-post-date">
-                    <div class="archive-post-day">19</div>
-                    <div class="archive-post-month">MAY</div>
-
-                </div>
-
-                <div class="archive-post-title">
-                    <h3><a href="http://www.cssmoban.com/natural-gloom-website-template/">Website Template: Natural Gloom</a></h3>
-                    <div class="post-date">10:35, Tuesday, May 19, 2009 in <a href="#">Category Name</a></div>
-                </div>
-
-                <div class="clearer">&nbsp;</div>
-
-            </div>
-
-            <div class="archive-separator"></div>
-
-            <div class="post">
-
-                <div class="archive-post-date">
-                    <div class="archive-post-day">01</div>
-                    <div class="archive-post-month">APR</div>
-
-                </div>
-
-                <div class="archive-post-title">
-                    <h3><a href="http://www.cssmoban.com/cerulean-elegance-website-template/">Website Template: Cerulean Elegance</a></h3>
-                    <div class="post-date">21:28, Saturday, April 1, 2009 in <a href="#">Category Name</a></div>
-                </div>
-
-                <div class="clearer">&nbsp;</div>
-
-            </div>
-
-            <div class="archive-separator"></div>
-
-            <div class="post">
-
-                <div class="archive-post-date">
-                    <div class="archive-post-day">19</div>
-                    <div class="archive-post-month">DEC</div>
-                </div>
-
-                <div class="archive-post-title">
-                    <h3><a href="http://www.cssmoban.com/emplode-website-template/">Website Template: Emplode</a></h3>
-                    <div class="post-date">08:35, Tuesday, December 19, 2008 in <a href="#">Category Name</a></div>
-                </div>
-
-                <div class="clearer">&nbsp;</div>
-
-            </div>
-
-            <div class="archive-separator"></div>
-
-            <div class="post">
-
-                <div class="archive-post-date">
-                    <div class="archive-post-day">15</div>
-                    <div class="archive-post-month">JUN</div>
-                </div>
-
-                <div class="archive-post-title">
-                    <h3><a href="http://www.cssmoban.com/grunge-superstar-website-template/">Website Template: Grunge Superstar</a></h3>
-                    <div class="post-date">08:35, Wednesday, June 15, 2008 in <a href="#">Category Name</a></div>
-                </div>
-
-                <div class="clearer">&nbsp;</div>
-
-            </div>
-
-            <div class="archive-separator"></div>
-
-            <div class="post">
-
-                <div class="archive-post-date">
-                    <div class="archive-post-day">25</div>
-                    <div class="archive-post-month">APR</div>
-                </div>
-
-                <div class="archive-post-title">
-                    <h3><a href="http://www.cssmoban.com/colorvoid-website-template/">Website Template: Colorvoid</a></h3>
-                    <div class="post-date">19:26, Friday, April 25, 2008 in <a href="#">Category Name</a></div>
-                </div>
-
-                <div class="clearer">&nbsp;</div>
-
-            </div>
-
-            <div class="archive-separator"></div>
-
-            <div class="post">
-
-                <div class="archive-post-date">
-                    <div class="archive-post-day">13</div>
-                    <div class="archive-post-month">DEC</div>
-                </div>
-
-                <div class="archive-post-title">
-                    <h3><a href="http://www.cssmoban.com/winterplain-website-template/">Website Template: Winterplain</a></h3>
-                    <div class="post-date">16:03, Monday, December 13, 2007 in <a href="#">Category Name</a></div>
-                </div>
-
-                <div class="clearer">&nbsp;</div>
-
-            </div>
-
-            <div class="archive-separator"></div>
 
             <div class="post">
 
